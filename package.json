@@ -1,0 +1,19 @@
+{
+  "name": "fastn-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watchExample": "watchify -d --noparse clone ./example/index.js -o ./example/index.browser.js",
+    "build": "browserify ./example/index.js > ./example/index.browser.js && gzip example/index.browser.js --extension=gz --extension=br",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gzip-cli": "^1.1.1",
+    "uglifyify": "^5.0.2",
+    "watchify": "^3.11.1"
+  }
+}
